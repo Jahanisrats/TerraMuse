@@ -12,7 +12,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, aspectRatio =
   const { addToCart } = useCart();
 
   return (
-    <div className={`product-card group cursor-pointer break-inside-avoid ${className}`} onClick={() => addToCart(product)}>
+    <div className={`product-card group break-inside-avoid ${className}`}>
       <div className={`relative overflow-hidden rounded-xl bg-[#eaddcf] mb-4 ${aspectRatio}`}>
         {product.badge && (
            <div className="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm z-20">

@@ -14,16 +14,16 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [items, setItems] = useState<CartItem[]>([]);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  // Load from local storage on mount
-  useEffect(() => {
-    const savedCart = localStorage.getItem('terraMuseCart');
-    if (savedCart) {
-      setItems(JSON.parse(savedCart));
+  const [items, setItems] = useState<CartItem[]>(() => {
+    try {
+      const savedCart = localStorage.getItem('terraMuseCart');
+      return savedCart ? JSON.parse(savedCart) : [];
+    } catch (e) {
+      console.error('Failed to parse cart from local storage', e);
+      return [];
     }
-  }, []);
+  });
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   // Save to local storage on update
   useEffect(() => {
