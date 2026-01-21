@@ -60,7 +60,9 @@ export const PRODUCTS: Product[] = [
     category: "Accessories",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAlIHiy25PuErafah36LcBpJ0vBUrVj0qFtV5YzL3eCRbDer8weBfm9UudH1LuOSE_BRPo9yvfR88UNAvINtCFtLyjnQYiN5mE6TMSJrsgSpfMc_F0gO4TebsvCpvjX4Dinmwm10zY8lHQlMsCSjdRL1WeH1MlF-SX0_jLZDqU_4Mcl5CUu7xfp0rlOr-W9bEMTRkuIVlKniWGzVqFh2Rm1bVuxuSQHFXZ97BjnAAaOXarWWkIsFvtB0-GTOJjEdNbkS799ajutNzc",
     subTitle: "Hand-hammered gold vermeil",
-    badge: "New"
+    badge: "New",
+    subCategory: "Jewelry",
+    material: "Gold Vermeil"
   },
   {
     id: "8",
@@ -68,7 +70,9 @@ export const PRODUCTS: Product[] = [
     price: 145.00,
     category: "Accessories",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDEY13AsQEs0jf5vCByQs8YdiBnhrWd8urQM81xt2mD4RmBRFyk-ukou6qFJaAYZ44R1FAuhissM49IzhUPDMFuUADV6WWXMUMpKzDGj2cbCSQD9HVJdW0w41KLSPAlDo1XhwfAZuFDJlc0MoFuKGIbXF-km3zRl8GvbDvEP6G4gP0Zy6ZKj9haC52ySqSuXTD2Eku3-PLlhQyd3PgzQjt29F4USpozKuT_DkZ5yLMvhPSE7gYTFPYwlfHwg68lZfTWhGrTZzWsxok",
-    subTitle: "Natural raffia & leather"
+    subTitle: "Natural raffia & leather",
+    subCategory: "Bags & Totes",
+    material: "Raffia"
   },
   {
     id: "9",
@@ -76,7 +80,9 @@ export const PRODUCTS: Product[] = [
     price: 65.00,
     category: "Accessories",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBUNRdoVcw3fY4eRm1K3YEX6bdTqXiy1ZsLoG-GENW8lNOylS17kEw_Y2VLgxWh9-v3rCDfC4H_qTJyA_Ta73nh0CIBOqKReM9H0OzpfiwiS76kJjz7oWFGiVQEVXuEFDRxM_W2qQOHJqUBbOnqWppaUibFQQvIGil2QukNSzmYK_yTUkZgdXDgRD3WvGKmQhcy-HLJ1kf1xPDJpHXjnpfFfR9o_i_qZqgf69dMUTReOAlYw-7XoYAuw_sf585ZuZYQUxT8tN-z-WE",
-    subTitle: "100% Organic Silk"
+    subTitle: "100% Organic Silk",
+    subCategory: "Scarves",
+    material: "Silk"
   },
   {
     id: "10",
