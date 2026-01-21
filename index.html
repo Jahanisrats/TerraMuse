@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TerraMuse</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=La+Belle+Aurore&amp;family=Mrs+Saint+Delafield&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#b25f4d",
+              "secondary": "#879C81",
+              "background-light": "#fdf8f2",
+              "background-dark": "#1a1714",
+              "text-main": "#6B3E2D",
+              "text-sub": "#8c7e73",
+              "accent-sage": "#879C81",
+              "accent-teal": "#7AB8B2",
+              "sand": "#e6dcd3",
+              "ink": "#6B3E2D",
+              "paper": "#EAE3D9",
+              "cream": "#FBF8F4",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"],
+              "serif": ["Noto Serif", "serif"],
+              "script": ["La Belle Aurore", "cursive"],
+              "hand": ["Mrs Saint Delafield", "cursive"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "2xl": "2rem",
+              "3xl": "3rem",
+              "full": "9999px"
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            },
+            animation: {
+              'fadeIn': 'fadeIn 1s ease-out',
+              'spin-slow': 'spin 10s linear infinite',
+              'spin-super-slow': 'spin 60s linear infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .text-shadow-soft {
+          text-shadow: 2px 2px 4px rgba(107, 62, 45, 0.1);
+      }
+      .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      /* Hide scrollbar for cleaner look */
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #d4c5b9;
+          border-radius: 4px;
+      }
+      .organic-blob-1 {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      }
+      .organic-blob-2 {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light text-text-main font-display antialiased overflow-x-hidden selection:bg-primary/30 selection:text-primary">
+    <div id="root"></div>
+  </body>
+</html>
