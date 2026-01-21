@@ -92,7 +92,10 @@ export const ShoppingBag: React.FC = () => {
                                 <span className="text-lg font-bold text-text-main dark:text-[#eaddcf]">Total</span>
                                 <span className="text-xl font-serif font-bold text-text-main dark:text-[#eaddcf]">${total.toFixed(2)}</span>
                             </div>
-                            <button className="w-full py-4 bg-primary text-white text-sm font-bold tracking-widest uppercase rounded-xl hover:bg-[#964a3a] transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-0.5 mb-4">
+                            <button
+                                onClick={() => alert("Checkout flow is not implemented in this demo.")}
+                                className="w-full py-4 bg-primary text-white text-sm font-bold tracking-widest uppercase rounded-xl hover:bg-[#964a3a] transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-0.5 mb-4"
+                            >
                                 Checkout
                             </button>
                             <p className="text-center text-xs text-text-sub flex items-center justify-center gap-1 opacity-70">
