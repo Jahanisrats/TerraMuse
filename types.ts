@@ -9,6 +9,8 @@ export interface Product {
   isNew?: boolean;
   isBestSeller?: boolean;
   color?: string;
+  subCategory?: string;
+  material?: string;
 }
 
 export interface CartItem extends Product {
